@@ -10,7 +10,7 @@ import 'package:enaya_doctor/common/utils/enums/network_request_enum.dart';
 
 class SplashScreenRepo{
 
-  Future<BaseResponsesModel> getQuickOptions() async {
+  Future<BaseResponsesModel> getAllCountries() async {
     try {
       Response response = await NetworkRequest().sendAppRequest(
           networkParameters: NetworkRequestModel(

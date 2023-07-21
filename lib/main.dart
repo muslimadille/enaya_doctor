@@ -2,16 +2,22 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:enaya_doctor/common/helper/app_navigator.dart';
 import 'package:enaya_doctor/common/helper/my_app_helper.dart';
 import 'package:enaya_doctor/common/utils/constants/app_colors.dart';
+import 'package:enaya_doctor/common/utils/constants/app_data.dart';
 import 'package:enaya_doctor/common/widgets/custom_Progress.dart';
 import 'package:enaya_doctor/features/splash_screen/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
+
+import 'common/providers/providers_list.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
+  AppConstants.prefs=await SharedPreferences.getInstance();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
@@ -31,11 +37,14 @@ void main() async{
     ..dismissOnTap = false
     ..fontSize = 20
   ;
-  runApp(EasyLocalization(
-      supportedLocales: const [Locale('en', 'US'), Locale('ar', 'EG')],
-      path: 'assets/strings', // <-- change the path of the translation files
-      fallbackLocale: const Locale('ar', 'EG'),
-      child: const MyApp()
+  runApp(MultiProvider(
+    providers: providersList,
+    child: EasyLocalization(
+        supportedLocales: const [Locale('en', 'US'), Locale('ar', 'EG')],
+        path: 'assets/strings', // <-- change the path of the translation files
+        fallbackLocale: const Locale('ar', 'EG'),
+        child: const MyApp()
+    ),
   ));
 }
 

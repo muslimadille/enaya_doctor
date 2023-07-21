@@ -54,4 +54,7 @@ class CountryModel {
     "updated_at": updatedAt,
     "flag": flag,
   };
+  static List<CountryModel> fromList(List<dynamic>? data){
+    return data==null?[]:List<CountryModel>.from(data.map((e) => CountryModel.fromJson(e)))  ;
+  }
 }

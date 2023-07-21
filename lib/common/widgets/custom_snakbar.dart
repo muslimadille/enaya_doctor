@@ -42,7 +42,7 @@ class CustomSnakbar {
           ),
         ],
       ),
-      backgroundColor: isFaild?AppColors.RED_FAILD:AppColors.GREEN_SUCCESS,
+      backgroundColor: isFaild?AppColors.RED:AppColors.LIGHT_GREEN,
       behavior: SnackBarBehavior.floating,
       elevation: 0,
       padding:EdgeInsets.all(20) ,

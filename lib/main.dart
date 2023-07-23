@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:enaya_doctor/common/helper/app_navigator.dart';
 import 'package:enaya_doctor/common/helper/my_app_helper.dart';
+import 'package:enaya_doctor/common/providers/local_provider.dart';
 import 'package:enaya_doctor/common/utils/constants/app_colors.dart';
 import 'package:enaya_doctor/common/utils/constants/app_data.dart';
 import 'package:enaya_doctor/common/widgets/custom_Progress.dart';
@@ -55,29 +56,32 @@ class MyApp extends StatelessWidget with MyAppHelper{
   Widget build(BuildContext context) {
     return Sizer(
       builder: (context, orientation, deviceType){
-        return MaterialApp(
-          localizationsDelegates: EasyLocalization.of(context)?.delegates,
-          supportedLocales: const [Locale('en', 'US'), Locale('ar', 'EG')],
-          locale: EasyLocalization.of(context)?.currentLocale!,
-          debugShowCheckedModeBanner: false,
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-            useMaterial3: true,
-          ),
-          builder: EasyLoading.init(
-            builder: (context, child) {
-              return MediaQuery(
-                data: MediaQuery.of(context).copyWith(
-                  textScaleFactor: 1.0,
-                ), //set desired text scale factor here
-                child: child!,
-              );
-            },
-          ),
-          onGenerateRoute: onGenerateRoute,
-          navigatorKey: AppNavigator().navigatorKey,
-          home: const SplashScreen(),
-        );
+        return Consumer<LocalProvider>(builder: (context,value,child){
+          EasyLocalization.of(context)!.setLocale(value.selectedLanguage);
+          return MaterialApp(
+            localizationsDelegates: EasyLocalization.of(context)?.delegates,
+            supportedLocales: const [Locale('en', 'US'), Locale('ar', 'EG')],
+            locale: EasyLocalization.of(context)?.currentLocale!,
+            debugShowCheckedModeBanner: false,
+            theme: ThemeData(
+              colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+              useMaterial3: true,
+            ),
+            builder: EasyLoading.init(
+              builder: (context, child) {
+                return MediaQuery(
+                  data: MediaQuery.of(context).copyWith(
+                    textScaleFactor: 1.0,
+                  ), //set desired text scale factor here
+                  child: child!,
+                );
+              },
+            ),
+            onGenerateRoute: onGenerateRoute,
+            navigatorKey: AppNavigator().navigatorKey,
+            home: const SplashScreen(),
+          );
+        },);
       },
     );
   }

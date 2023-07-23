@@ -1,3 +1,12 @@
 {
-  "APP_NAME": "Enaya for Doctors"
+  "APP_NAME": "Enaya for Doctors",
+  "select_user_type": "Select Account Type",
+  "doctor": "Doctor",
+  "laboratory": "Laboratory",
+  "pharmacy": "Pharmacy",
+  "register": "Register",
+  "select_country": "Select Country",
+  "select_language": "Select Language",
+  "next": "Next"
+
 }

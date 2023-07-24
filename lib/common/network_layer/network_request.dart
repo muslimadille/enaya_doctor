@@ -6,6 +6,7 @@ import 'package:enaya_doctor/common/model/network_exption_model.dart';
 import 'package:enaya_doctor/common/model/network_request_model.dart';
 import 'package:enaya_doctor/common/network_layer/network_exeption_handler.dart';
 import 'package:enaya_doctor/common/utils/constants/api_codes.dart';
+import 'package:enaya_doctor/common/utils/constants/app_data.dart';
 import 'package:enaya_doctor/common/utils/enums/network_request_enum.dart';
 import 'package:enaya_doctor/common/widgets/custom_snakbar.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
@@ -44,7 +45,9 @@ class NetworkRequest with NetworkExceptionHandler{
         queryParameters: networkParameters.queryParameters,
         data: networkParameters.data,
         options: Options(
-            headers: networkParameters.header,
+            headers: {
+              'Authorization':"Bearer ${AppConstants.prefs.get("token")??""}"
+            },
             method: networkParameters.networkType.value
         ),
       );

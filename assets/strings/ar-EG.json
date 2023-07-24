@@ -6,7 +6,14 @@
   "pharmacy": "صيدلية",
   "select_country": "حدد الدولة",
   "select_language": "حدد اللغة",
-  "next": "التالي"
+  "next": "التالي",
+  "phone_hint": "رقم الموبايل بدون 0",
+  "password_hint": "رمز الدخول",
+  "login_screen_title": "تسجيل الدخول",
+  "forget_password_btn": "هل نسيت كلمة المرور؟",
+  "dont_have_account": "ليس لديك حساب؟",
+  "register_text_btn": "سجل من هنا"
+
 
 
 }

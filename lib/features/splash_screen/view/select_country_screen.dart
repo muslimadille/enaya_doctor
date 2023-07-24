@@ -77,6 +77,7 @@ class _SelectCountryScreenState extends State<SelectCountryScreen> with SelectCo
               }),
               onSelect: (int index) {
                 context.read<LocalProvider>().setLanguage(context.read<LocalProvider>().languagesList[index]);
+
               },
             ),
             SizedBox(height: 15.h,),

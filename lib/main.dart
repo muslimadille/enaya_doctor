@@ -64,7 +64,7 @@ class MyApp extends StatelessWidget with MyAppHelper{
             locale: EasyLocalization.of(context)?.currentLocale!,
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
-              colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+              colorScheme: ColorScheme.fromSeed(seedColor: AppColors.BASE_COLOR),
               useMaterial3: true,
             ),
             builder: EasyLoading.init(

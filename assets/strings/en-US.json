@@ -7,6 +7,12 @@
   "register": "Register",
   "select_country": "Select Country",
   "select_language": "Select Language",
-  "next": "Next"
+  "next": "Next",
+  "phone_hint": "Mobile number without 0",
+  "password_hint": "Password",
+  "login_screen_title": "Login",
+  "forget_password_btn": "Did you forget your password?",
+  "dont_have_account": "Don't have an account?",
+  "register_text_btn": "Register here"
 
 }

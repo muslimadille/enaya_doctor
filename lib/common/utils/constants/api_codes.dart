@@ -7,5 +7,7 @@ class ApiBaseUrl {
 
 class ApiCodes {
   static const String CUNTRIES = 'country';
+  static const String LOGIN = 'doctor/login';
+
 
 }

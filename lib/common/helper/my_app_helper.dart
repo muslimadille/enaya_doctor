@@ -2,7 +2,7 @@ import 'package:enaya_doctor/common/helper/app_navigator.dart';
 import 'package:enaya_doctor/common/helper/check_internet.dart';
 import 'package:enaya_doctor/common/utils/constants/app_routes.dart';
 import 'package:enaya_doctor/features/auth/view/screens/login_screen.dart';
-import 'package:enaya_doctor/features/home_screenn/view/home_screen.dart';
+import 'package:enaya_doctor/features/home_screen/view/home_screen.dart';
 import 'package:enaya_doctor/features/splash_screen/view/select_country_screen.dart';
 import 'package:enaya_doctor/features/splash_screen/view/select_user_screen.dart';
 import 'package:enaya_doctor/features/splash_screen/view/splash_screen.dart';

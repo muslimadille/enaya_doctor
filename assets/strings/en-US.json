@@ -21,5 +21,8 @@
   "change_language": "change language",
   "help_center": " help center",
   "about_us": "about us",
-  "log_out": "log out"
+  "log_out": "log out",
+  "offer_title": "Title: ",
+  "offer_subtitle": "Subtitle: ",
+  "offer_price": "Price: "
 }

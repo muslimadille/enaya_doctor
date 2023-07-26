@@ -25,7 +25,7 @@ class LocalProvider with ChangeNotifier{
     notifyListeners();
   }
   bool isEnglish(){
-    return EasyLocalization.of(AppNavigator().currentContext())?.currentLocale==Locale("en","US");
+    return EasyLocalization.of(AppNavigator().currentContext())?.currentLocale==Locale("en","US")??false;
   }
 
 }

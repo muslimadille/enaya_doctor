@@ -20,7 +20,10 @@
   "change_language": "تغيير اللغة",
   "help_center": "مركز المساعدة",
   "about_us": "عن عناية",
-  "log_out": "تسجيل الخروج"
+  "log_out": "تسجيل الخروج",
+  "offer_title": "عنوان العرض: ",
+  "offer_subtitle": "وصف العرض: ",
+  "offer_price": "السعر: "
 
 
 

@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:enaya_doctor/common/utils/constants/app_colors.dart';
 import 'package:enaya_doctor/common/utils/constants/app_font_size.dart';
 import 'package:enaya_doctor/common/utils/constants/image_paths.dart';
-import 'package:enaya_doctor/features/home_screenn/view_model/home_screen_helper.dart';
+import 'package:enaya_doctor/features/home_screen/view_model/home_screen_helper.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {

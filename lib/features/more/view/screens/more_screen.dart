@@ -29,6 +29,6 @@ class MoreScreen extends StatelessWidget with MoreScreenHelper {
       ],))
 
 
-    ],),);;
+    ],),);
   }
 }

@@ -6,22 +6,18 @@ import 'package:enaya_doctor/common/network_layer/network_request.dart';
 import 'package:enaya_doctor/common/utils/constants/api_codes.dart';
 import 'package:enaya_doctor/common/utils/enums/network_request_enum.dart';
 
-class LoginRepo{
-  Future<BaseResponsesModel> login({
-    required String phone,
-    required String password
-}) async {
+
+class OffersRepo{
+
+
+  Future<BaseResponsesModel> getDoctorOffers() async {
     try {
       Response response = await NetworkRequest().sendAppRequest(
           networkParameters: NetworkRequestModel(
-            apiCode: ApiCodes.LOGIN,
-            networkType: NetworkRequestEnum.post,
-            showProgress: true,
-            dismissProgess: true,
-            data:{
-              "email":phone,
-              "password":password
-            }
+              apiCode: ApiCodes.GET_DOCTOR_OFFERS,
+              networkType: NetworkRequestEnum.get,
+              showProgress: true,
+              dismissProgess: true,
           ),
           exceptionParameters: const NetworkExceptionModel(
               dismissProgress: true,

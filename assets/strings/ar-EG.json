@@ -12,7 +12,11 @@
   "login_screen_title": "تسجيل الدخول",
   "forget_password_btn": "هل نسيت كلمة المرور؟",
   "dont_have_account": "ليس لديك حساب؟",
-  "register_text_btn": "سجل من هنا"
+  "register_text_btn": "سجل من هنا",
+  "profile": "حسابي",
+  "schedule": "جدول المواعيد",
+  "offers": "العروض",
+  "more": "المزيد"
 
 
 

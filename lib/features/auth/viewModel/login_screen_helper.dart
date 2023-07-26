@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:enaya_doctor/common/helper/app_navigator.dart';
 import 'package:enaya_doctor/common/providers/country_provider.dart';
 import 'package:enaya_doctor/common/utils/constants/app_data.dart';
+import 'package:enaya_doctor/common/utils/constants/app_routes.dart';
 import 'package:enaya_doctor/features/auth/model/login_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -24,11 +25,14 @@ mixin LoginScreenHelper{
     loginButtonStreamController.close();
   }
   login()async{
-    await LoginRepo().login(
+    AppNavigator().pushAndRemoveAll(routeName: AppRoutes.HOME_SCREEN_ROUTE);
+
+    /*await LoginRepo().login(
         phone:AppNavigator().currentContext().read<CountryProvider>().selectedCountry.phoneCode
             +phone,password:password).then((value){
       LoginModel data= LoginModel.fromJson(value.data);
       AppConstants.prefs.setString("token", data.token);
-    });
+      AppNavigator().pushAndRemoveAll(routeName: AppRoutes.HOME_SCREEN_ROUTE);
+    });*/
   }
 }

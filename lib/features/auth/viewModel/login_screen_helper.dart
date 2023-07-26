@@ -25,14 +25,13 @@ mixin LoginScreenHelper{
     loginButtonStreamController.close();
   }
   login()async{
-    AppNavigator().pushAndRemoveAll(routeName: AppRoutes.HOME_SCREEN_ROUTE);
 
-    /*await LoginRepo().login(
+    await LoginRepo().login(
         phone:AppNavigator().currentContext().read<CountryProvider>().selectedCountry.phoneCode
             +phone,password:password).then((value){
       LoginModel data= LoginModel.fromJson(value.data);
       AppConstants.prefs.setString("token", data.token);
       AppNavigator().pushAndRemoveAll(routeName: AppRoutes.HOME_SCREEN_ROUTE);
-    });*/
+    });
   }
 }

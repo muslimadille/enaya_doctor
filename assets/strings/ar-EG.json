@@ -23,7 +23,33 @@
   "log_out": "تسجيل الخروج",
   "offer_title": "عنوان العرض: ",
   "offer_subtitle": "وصف العرض: ",
-  "offer_price": "السعر: "
+  "offer_price": "السعر: ",
+  "edite_profile": "تعديل الحساب",
+  "profile_info": "معلومات الحساب",
+  "clinic_name": "اسم العيادة",
+  "clinic_info": "معلومات العيادة",
+  "landmark": "نقطة دالة",
+  "address": "العنوان",
+  "address_info": "معلومات العنوان",
+  "career_info": "معلومات مهنية",
+  "full_name": "الاسم بالكامل",
+  "about_doctor": "عن الطبيب",
+  "specialist": "التخصص",
+  "email": "البريد الالكتروني",
+  "mobile": "رقم الموبايل",
+  "password": "كلمة المرور"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

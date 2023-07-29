@@ -25,7 +25,6 @@ mixin LoginScreenHelper{
     loginButtonStreamController.close();
   }
   login()async{
-
     await LoginRepo().login(
         phone:AppNavigator().currentContext().read<CountryProvider>().selectedCountry.phoneCode
             +phone,password:password).then((value){

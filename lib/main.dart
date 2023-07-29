@@ -9,6 +9,7 @@ import 'package:enaya_doctor/features/splash_screen/view/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
@@ -66,6 +67,7 @@ class MyApp extends StatelessWidget with MyAppHelper{
             theme: ThemeData(
               colorScheme: ColorScheme.fromSeed(seedColor: AppColors.BASE_COLOR),
               useMaterial3: true,
+                fontFamily: GoogleFonts.getFont('Tajawal').fontFamily
             ),
             builder: EasyLoading.init(
               builder: (context, child) {

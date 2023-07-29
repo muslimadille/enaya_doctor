@@ -24,5 +24,19 @@
   "log_out": "log out",
   "offer_title": "Title: ",
   "offer_subtitle": "Subtitle: ",
-  "offer_price": "Price: "
+  "offer_price": "Price: ",
+  "edite_profile": "edite profile",
+  "profile_info": "profile info",
+  "clinic_name": "clinic name",
+  "clinic_info": "clinic info",
+  "landmark": "landmark",
+  "address": "address",
+  "address_info": "address info",
+  "career_info": "career info",
+  "full_name": "full name",
+  "about_doctor": "about doctor",
+  "specialist": "specialist",
+  "email": "email",
+  "mobile": "mobile",
+  "password": "password"
 }

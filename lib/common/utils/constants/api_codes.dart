@@ -9,4 +9,7 @@ class ApiCodes {
   static const String CUNTRIES = 'country';
   static const String LOGIN = 'doctor/login';
   static const String GET_DOCTOR_OFFERS = "doctor/dashboard/offers";
+  static const String GET_DOCTOR_PROFILE = "doctor/dashboard/profile";
+
+
 }

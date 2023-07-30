@@ -1,5 +1,6 @@
 import 'package:enaya_doctor/common/providers/country_provider.dart';
 import 'package:enaya_doctor/common/providers/local_provider.dart';
+import 'package:enaya_doctor/common/providers/manage_dates_provider.dart';
 import 'package:enaya_doctor/common/providers/profile_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
@@ -17,5 +18,10 @@ List<SingleChildWidget> providersList=[
   ChangeNotifierProvider<ProfileProvider>(
       lazy:false,
       create: (context) => ProfileProvider()),
+
+  ChangeNotifierProvider<ManageDatesProvider>(
+      lazy:false,
+      create: (context) => ManageDatesProvider()),
+
 
 ];

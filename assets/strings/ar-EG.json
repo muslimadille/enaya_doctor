@@ -37,7 +37,15 @@
   "specialist": "التخصص",
   "email": "البريد الالكتروني",
   "mobile": "رقم الموبايل",
-  "password": "كلمة المرور"
+  "password": "كلمة المرور",
+  "Schedule": "المواعيد",
+  "Schedule_summary": "ملخص المواعيد",
+  "manage_dates": "ادارة المواعيد",
+  "clinic_open_time": "مواعيد العمل",
+  "vacation_dates": "مواعيد الاجازات",
+  "no_data": "لا يوجد بيانات"
+
+
 
 
 

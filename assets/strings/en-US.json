@@ -38,5 +38,12 @@
   "specialist": "specialist",
   "email": "email",
   "mobile": "mobile",
-  "password": "password"
+  "password": "password",
+  "Schedule": "Schedule",
+  "Schedule_summary": "Schedule summary",
+  "manage_dates": "manage dates",
+  "clinic_open_time": "clinic open time",
+  "vacation_dates": "vacation dates",
+  "no_data": "no data"
+
 }

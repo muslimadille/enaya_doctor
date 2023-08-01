@@ -1,6 +1,6 @@
 import 'package:enaya_doctor/common/utils/constants/app_colors.dart';
-import 'package:enaya_doctor/features/appointments/appointMent_helper.dart';
 import 'package:enaya_doctor/features/profile/view/widgets/profile_card_widget.dart';
+import 'package:enaya_doctor/features/schedual/view_model/appointMent_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 

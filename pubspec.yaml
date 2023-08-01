@@ -43,8 +43,27 @@ dependencies:
   network_info_plus: ^3.0.5
   connectivity_plus: ^4.0.1
   shared_preferences: ^2.2.0
-  google_fonts: ^5.1.0
+  google_fonts: ^4.0.4
+  map_location_picker: ^1.2.1
+  flutter_native_splash: ^2.3.1
 
+flutter_native_splash:
+  image: assets/images/new_bg_dark.png
+  branding: assets/images/logo_name_white.png
+  image_dark: assets/images/new_bg_dark.png
+  branding_dark: assets/images/logo_name_white.png
+
+  android: true
+  ios: true
+
+
+  android_12:
+    image: assets/images/logo_name_white.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/images/logo_name_white.png
+    icon_background_color_dark: "#ffffff"
+
+  web: false
 
 dev_dependencies:
   flutter_test:

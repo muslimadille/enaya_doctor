@@ -44,6 +44,10 @@
   "manage_dates": "manage dates",
   "clinic_open_time": "clinic open time",
   "vacation_dates": "vacation dates",
-  "no_data": "no data"
-
+  "no_data": "no data",
+  "edit_working_times": "edit working days",
+  "from": "from: ",
+  "to": "to: ",
+  "duration": "duration: ",
+  "add_vacation_screen_title": "add vacation"
 }

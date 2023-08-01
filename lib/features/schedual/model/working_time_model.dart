@@ -30,4 +30,7 @@ class WorkingTImeModel {
     "time_en": timeEn,
     "time_ar": timeAr,
   };
+  static List<WorkingTImeModel> fromList(List<dynamic>? data){
+    return data==null?[]:List<WorkingTImeModel>.from(data.map((e) => WorkingTImeModel.fromJson(e)))  ;
+  }
 }

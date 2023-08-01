@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:enaya_doctor/common/widgets/custom_action_bar.dart';
-import 'package:enaya_doctor/features/appointments/appointMent_helper.dart';
-import 'package:enaya_doctor/features/appointments/view/widgets/schedual_tab_widget.dart';
+import 'package:enaya_doctor/features/schedual/view_model/appointMent_helper.dart';
+import 'package:enaya_doctor/features/schedual/view/widgets/schedual_tab_widget.dart';
 import 'package:flutter/material.dart';
 
 

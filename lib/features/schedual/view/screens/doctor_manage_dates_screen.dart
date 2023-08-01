@@ -2,10 +2,10 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:enaya_doctor/common/providers/manage_dates_provider.dart';
 import 'package:enaya_doctor/common/utils/constants/app_colors.dart';
 import 'package:enaya_doctor/common/widgets/custom_Progress.dart';
-import 'package:enaya_doctor/features/appointments/view/widgets/manage_dates_helper.dart';
-import 'package:enaya_doctor/features/appointments/view/widgets/mange_dates_item.dart';
-import 'package:enaya_doctor/features/appointments/view/widgets/vacation_list_item.dart';
-import 'package:enaya_doctor/features/appointments/view/widgets/woking_time_item.dart';
+import 'package:enaya_doctor/features/schedual/view_model/manage_dates_helper.dart';
+import 'package:enaya_doctor/features/schedual/view/widgets/mange_dates_item.dart';
+import 'package:enaya_doctor/features/schedual/view/widgets/vacation_list_item.dart';
+import 'package:enaya_doctor/features/schedual/view/widgets/woking_time_item.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -33,8 +33,10 @@ class _DoctorMangeDatesScreenState extends State<DoctorMangeDatesScreen> with Ma
             builder: (context,data,_) {
               return ManageDatesItem(
                 title: tr('clinic_open_time'),
-                onEditClick: (){}, body:
-              data.isLoading?CustomProgressWidget():data.activeWorkingDays.isNotEmpty?
+                onEditClick: onEditWorkTimesClick,
+                body: data.isLoading?
+                CustomProgressWidget():
+                data.activeWorkingDays.isNotEmpty?
               ListView.builder(
                   itemCount: data.activeWorkingDays.length,
                     itemBuilder: (context,index){
@@ -48,13 +50,15 @@ class _DoctorMangeDatesScreenState extends State<DoctorMangeDatesScreen> with Ma
                   builder: (context,data,_) {
                     return ManageDatesItem(
                       title: tr('vacation_dates'),
-                      onEditClick: (){}, body:
+                      onEditClick: onAddVacationClick, body:
                     data.isLoading?CustomProgressWidget():data.vacations.isNotEmpty?
                     ListView.builder(
                         itemCount: data.vacations.length,
                         itemBuilder: (context,index){
                           return VacationListItem(vacationModel: data.vacations[index],
-                            onDelete: (){},);
+                            onDelete: (){
+                              onDeleteVacation(data.vacations[index].id.toString());
+                            },);
                         }):Center(child:Text(tr('no_data')))
                       ,);
                   }

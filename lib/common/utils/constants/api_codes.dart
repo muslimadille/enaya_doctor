@@ -13,6 +13,11 @@ class ApiCodes {
   static const String GET_DOCTOR_WORKING_HOURS = "doctor/dashboard/working-hours";
   static const String GET_DOCTOR_VACATIONS = "doctor/dashboard/vacations";
   static const String UPDATE_DOCTOR_WORKING_HOURS= "doctor/dashboard/working-hours/update";
+  static const String GET_ALL_TIMES = "doctor/dashboard/times";
+  static const String GET_ALL_DURATIONS = "doctor/dashboard/durations";
+  static const String DOC_UPDATE_TIMES_API = "doctor/dashboard/working-hours/update";
+  static const String DOC_ADD_VACATION_API = "doctor/dashboard/vacation/add";
+  static const String DELETE_VACATION_API = "doctor/dashboard/vacation/delete";
 
 
 }

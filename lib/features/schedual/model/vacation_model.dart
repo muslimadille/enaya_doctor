@@ -12,7 +12,7 @@ class VacationModel {
   final int id;
   final DateTime startDate;
   final DateTime endDate;
-  final int doctorId;
+  final dynamic doctorId;
 
   VacationModel({
     required this.id,

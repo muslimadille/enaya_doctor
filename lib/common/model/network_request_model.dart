@@ -4,7 +4,7 @@ import 'package:enaya_doctor/common/utils/enums/network_request_enum.dart';
 class NetworkRequestModel {
   final String apiCode;
   final Map<String, dynamic>? queryParameters;
-  final data;
+  final dynamic data;
   final NetworkRequestEnum networkType;
   Map<String,String> header;
   // final Options options;

@@ -4,8 +4,9 @@
 
 import 'dart:convert';
 
-import 'package:enaya_doctor/features/appointments/model/working_duration_model.dart';
-import 'package:enaya_doctor/features/appointments/model/working_time_model.dart';
+import 'package:enaya_doctor/features/schedual/model/working_duration_model.dart';
+import 'package:enaya_doctor/features/schedual/model/working_time_model.dart';
+
 
 WorkingDayModel workingDayModelFromJson(String str) => WorkingDayModel.fromJson(json.decode(str));
 
@@ -14,17 +15,17 @@ String workingDayModelToJson(WorkingDayModel data) => json.encode(data.toJson())
 class WorkingDayModel {
   final int? id;
   final int? dayId;
-  final int? timeFromId;
-  final int? timeToId;
-  final int? durationId;
-  final String? status;
+   int? timeFromId;
+   int? timeToId;
+   int? durationId;
+   String? status;
   final String? doctorId;
   final String? createdAt;
   final String? updatedAt;
   final Day? day;
-  final WorkingTImeModel? timeFrom;
-  final WorkingDurationModel? duration;
-  final WorkingTImeModel? timeTo;
+   WorkingTImeModel? timeFrom;
+   WorkingDurationModel? duration;
+   WorkingTImeModel? timeTo;
 
   WorkingDayModel({
     required this.id,

@@ -1,8 +1,8 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:enaya_doctor/common/helper/app_navigator.dart';
-import 'package:enaya_doctor/features/appointments/model/doctor_schedule_model.dart';
-import 'package:enaya_doctor/features/appointments/view/screens/doctor_manage_dates_screen.dart';
-import 'package:enaya_doctor/features/appointments/view/screens/doctor_shedule_screen.dart';
+import 'package:enaya_doctor/features/schedual/model/doctor_schedule_model.dart';
+import 'package:enaya_doctor/features/schedual/view/screens/doctor_manage_dates_screen.dart';
+import 'package:enaya_doctor/features/schedual/view/screens/doctor_shedule_screen.dart';
 import 'package:flutter/material.dart';
 
 mixin AppointmentHelper{

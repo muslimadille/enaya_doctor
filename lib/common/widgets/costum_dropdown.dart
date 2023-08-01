@@ -6,10 +6,12 @@ class CustomDropdown extends StatefulWidget {
   final double? width;
   final List<String>items;
   final Function(int index) onSelect;
+  final int? selectedIndex;
   const CustomDropdown({
     this.width,
     required this.items,
     required this.onSelect,
+    this.selectedIndex,
     Key? key}) : super(key: key);
 
   @override
@@ -20,7 +22,7 @@ class _CustomDropdownState extends State<CustomDropdown> {
   String?selectedValue;
   @override
   void initState() {
-    selectedValue=widget.items[0];
+    selectedValue=widget.items[widget.selectedIndex??0];
     super.initState();
   }
   @override

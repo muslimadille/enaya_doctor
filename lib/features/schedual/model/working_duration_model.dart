@@ -30,4 +30,7 @@ class WorkingDurationModel {
     "duration_en": durationEn,
     "duration_ar": durationAr,
   };
+  static List<WorkingDurationModel> fromList(List<dynamic>? data){
+    return data==null?[]:List<WorkingDurationModel>.from(data.map((e) => WorkingDurationModel.fromJson(e)))  ;
+  }
 }

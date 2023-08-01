@@ -36,8 +36,8 @@ class NetworkRequest with NetworkExceptionHandler{
       EasyLoading.show();
     }
 
-    log("******Request************(serviceId:${networkParameters.apiCode})\n${networkParameters.data!=null?json.encode(networkParameters.data):{}}");
-    log("******Request************(serviceId:${networkParameters.apiCode})\n${networkParameters.queryParameters!=null?json.encode(networkParameters.queryParameters):{}}");
+    log("******Request************(serviceId:${networkParameters.apiCode})\n${networkParameters.data!=null?networkParameters.data:{}}");
+    log("******Request************(serviceId:${networkParameters.apiCode})\n${networkParameters.queryParameters!=null?networkParameters.queryParameters:{}}");
 
     try {
       final Response response = await dio.request(

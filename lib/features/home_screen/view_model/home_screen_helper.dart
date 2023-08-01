@@ -1,8 +1,8 @@
-import 'package:enaya_doctor/features/appointments/view/screens/doctor_schedual_summry_Screen.dart';
 import 'package:enaya_doctor/features/home_screen/model/bottom_bar_model.dart';
 import 'package:enaya_doctor/features/more/view/screens/more_screen.dart';
 import 'package:enaya_doctor/features/offers/view/screens/offers_screen.dart';
 import 'package:enaya_doctor/features/profile/view/screens/doctor_profile.dart';
+import 'package:enaya_doctor/features/schedual/view/screens/doctor_schedual_summry_Screen.dart';
 import 'package:flutter/material.dart';
 
 mixin HomeScreenHelper{

@@ -43,7 +43,14 @@
   "manage_dates": "ادارة المواعيد",
   "clinic_open_time": "مواعيد العمل",
   "vacation_dates": "مواعيد الاجازات",
-  "no_data": "لا يوجد بيانات"
+  "no_data": "لا يوجد بيانات",
+  "edit_working_times": "تعديل ايام العمل",
+  "from": "من: ",
+  "to": "الى: ",
+  "duration": "مدة الانتظار: ",
+  "add_vacation_screen_title": "اضافة اجازة"
+
+
 
 
 

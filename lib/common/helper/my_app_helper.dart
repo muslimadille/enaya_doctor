@@ -3,6 +3,8 @@ import 'package:enaya_doctor/common/helper/check_internet.dart';
 import 'package:enaya_doctor/common/utils/constants/app_routes.dart';
 import 'package:enaya_doctor/features/auth/view/screens/login_screen.dart';
 import 'package:enaya_doctor/features/home_screen/view/home_screen.dart';
+import 'package:enaya_doctor/features/schedual/view/screens/add_vacation_screen.dart';
+import 'package:enaya_doctor/features/schedual/view/screens/edit_working_times_screen.dart';
 import 'package:enaya_doctor/features/splash_screen/view/select_country_screen.dart';
 import 'package:enaya_doctor/features/splash_screen/view/select_user_screen.dart';
 import 'package:enaya_doctor/features/splash_screen/view/splash_screen.dart';
@@ -27,7 +29,17 @@ mixin class MyAppHelper{
     });
   }
 
-
+  Future<DateTime?> pickDate() async {
+    FocusManager.instance.primaryFocus?.unfocus();
+    final DateTime? picked = await showDatePicker(
+        context: AppNavigator().currentContext(),
+        initialDate: DateTime.now(),
+        initialEntryMode: DatePickerEntryMode.calendarOnly,
+        firstDate: DateTime.now(),
+        lastDate: DateTime(2090, 8)
+    );
+    return picked;
+  }
 
  /* Widget startRoutSelector(){
     if(LocalStorage().getFromBox(key: StorageKeys.IS_NOT_FRIST_TIME)??false){
@@ -53,6 +65,12 @@ mixin class MyAppHelper{
 
       case AppRoutes.HOME_SCREEN_ROUTE:
         return MaterialPageRoute(builder: (_) =>  const HomeScreen());
+
+    case AppRoutes.EDIT_WORKING_TIMES_SCREEN_ROUTE:
+    return MaterialPageRoute(builder: (_) =>  const EditWorkingTimesScreen());
+
+      case AppRoutes.ADD_VACATION_SCREEN_ROUTE:
+        return MaterialPageRoute(builder: (_) =>  const AddVacationScreen());
 
 
 

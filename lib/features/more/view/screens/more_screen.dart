@@ -19,7 +19,7 @@ class MoreScreen extends StatelessWidget with MoreScreenHelper {
       ListView(children:  [
         MoreItemWidget(title: 'change_language', icon: Icons.language,
           onClick: (){
-
+            onChangeLanguageClick();
           },),
         MoreItemWidget(title: 'help_center', icon: Icons.help_outline,onClick: (){}),
         MoreItemWidget(title: 'about_us', icon: Icons.help_outline,onClick: (){}),

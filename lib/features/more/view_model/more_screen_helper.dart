@@ -7,4 +7,9 @@ mixin MoreScreenHelper{
     AppConstants.prefs.setString("token","");
     AppNavigator().pushAndRemoveAll(routeName: AppRoutes.SPLASH_SCREEN_ROUTE);
   }
+
+  onChangeLanguageClick(){
+    AppNavigator().push(routeName: AppRoutes.CHANGE_LANGUAGE_SCREEN_ROUTE);
+  }
+
 }

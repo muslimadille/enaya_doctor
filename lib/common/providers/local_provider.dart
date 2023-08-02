@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 class LocalProvider with ChangeNotifier{
   Locale selectedLanguage=Locale('ar',"EG");
   final languagesList=[
-    "عربي",
     "English",
+    "عربي",
     "كوردي"
   ];
 

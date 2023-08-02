@@ -66,6 +66,7 @@ class MyApp extends StatelessWidget with MyAppHelper{
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
               colorScheme: ColorScheme.fromSeed(seedColor: AppColors.BASE_COLOR),
+              primaryColor: AppColors.BASE_COLOR,
               useMaterial3: true,
                 fontFamily: GoogleFonts.getFont('Tajawal').fontFamily
             ),

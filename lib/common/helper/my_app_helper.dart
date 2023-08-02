@@ -3,6 +3,7 @@ import 'package:enaya_doctor/common/helper/check_internet.dart';
 import 'package:enaya_doctor/common/utils/constants/app_routes.dart';
 import 'package:enaya_doctor/features/auth/view/screens/login_screen.dart';
 import 'package:enaya_doctor/features/home_screen/view/home_screen.dart';
+import 'package:enaya_doctor/features/more/view/screens/about_us_screen.dart';
 import 'package:enaya_doctor/features/more/view/screens/change_language_screen.dart';
 import 'package:enaya_doctor/features/schedual/view/screens/add_vacation_screen.dart';
 import 'package:enaya_doctor/features/schedual/view/screens/edit_working_times_screen.dart';
@@ -75,6 +76,9 @@ mixin class MyAppHelper{
 
       case AppRoutes.CHANGE_LANGUAGE_SCREEN_ROUTE:
         return MaterialPageRoute(builder: (_) =>  const ChangeLanguageScreen());
+
+      case AppRoutes.ABOUT_US_SCREEN_ROUTE:
+        return MaterialPageRoute(builder: (_) =>  const AboutUsScreen());
 
 
 

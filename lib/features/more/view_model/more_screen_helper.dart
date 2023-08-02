@@ -11,5 +11,8 @@ mixin MoreScreenHelper{
   onChangeLanguageClick(){
     AppNavigator().push(routeName: AppRoutes.CHANGE_LANGUAGE_SCREEN_ROUTE);
   }
+  onAboutUsClick(){
+    AppNavigator().push(routeName: AppRoutes.ABOUT_US_SCREEN_ROUTE);
+  }
 
 }

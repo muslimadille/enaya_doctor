@@ -22,7 +22,9 @@ class MoreScreen extends StatelessWidget with MoreScreenHelper {
             onChangeLanguageClick();
           },),
         MoreItemWidget(title: 'help_center', icon: Icons.help_outline,onClick: (){}),
-        MoreItemWidget(title: 'about_us', icon: Icons.help_outline,onClick: (){}),
+        MoreItemWidget(title: 'about_us', icon: Icons.help_outline,onClick: (){
+          onAboutUsClick();
+        }),
         MoreItemWidget(title: 'log_out', icon: Icons.logout,onClick: (){
           onLogoutClick();
         })

@@ -87,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> with LoginScreenHelper{
                mainAxisAlignment: MainAxisAlignment.center,
                children: [
                  Text(tr('dont_have_account'),style: TextStyle(color: AppColors.GREY),),
-                 GestureDetector(onTap: (){},
+                 GestureDetector(onTap: onRegisterClicked,
                      child: Text(tr('register_text_btn'),style: TextStyle(color: AppColors.BASE_COLOR),))
                ],)
 

@@ -49,25 +49,18 @@
   "to": "الى: ",
   "duration": "مدة الانتظار: ",
   "add_vacation_screen_title": "اضافة اجازة",
-  "about_us_screen_title": "عن التطبيق"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  "about_us_screen_title": "عن التطبيق",
+  "register_doctor": "تسجيل الاطباء",
+  "register_pharmacy": "تسجيل الصيدليات ",
+  "register_laboratory": "تسجيل المختبرات",
+  "register_card_title": "معلومات التسجيل",
+  "confirm_password_hint": "تاكيد كلمة المرور",
+  "email_hint": "البريد الالكتروني",
+  "gender": "الجنس",
+  "male": "ذكر",
+  "female":"انثى",
+  "full_name_ar": "الاسم واللقب (عربي)",
+  "full_name_en": "الاسم واللقب (english)",
+  "register": ""
 
 }

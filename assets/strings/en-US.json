@@ -50,6 +50,19 @@
   "to": "to: ",
   "duration": "duration: ",
   "add_vacation_screen_title": "add vacation",
-  "about_us_screen_title": "about Us"
+  "about_us_screen_title": "about Us",
+  "register_doctor": "doctor register",
+  "register_pharmacy": "doctor pharmacy",
+  "register_laboratory": "doctor laboratory",
+  "register_card_title": "register information",
+  "confirm_password_hint": "confirm password",
+  "email_hint": "Email",
+  "gender": "gender",
+  "male": "male",
+  "female":"female",
+  "full_name_ar": "full name (arabic)",
+  "full_name_en": "full name (english)",
+
+
 
 }

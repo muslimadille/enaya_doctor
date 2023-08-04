@@ -33,4 +33,7 @@ mixin LoginScreenHelper{
       AppNavigator().pushAndRemoveAll(routeName: AppRoutes.HOME_SCREEN_ROUTE);
     });
   }
+  onRegisterClicked(){
+    AppNavigator().push(routeName: AppRoutes.REGISTER_SCREEN_ROUTE);
+  }
 }

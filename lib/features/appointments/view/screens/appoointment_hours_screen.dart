@@ -4,12 +4,13 @@ import 'package:enaya_doctor/common/utils/constants/app_colors.dart';
 import 'package:enaya_doctor/common/utils/constants/app_font_size.dart';
 import 'package:enaya_doctor/common/widgets/custom_action_bar.dart';
 import 'package:enaya_doctor/features/appointments/model/appointments_dates_model.dart';
+import 'package:enaya_doctor/features/appointments/viewModel/doctor_appointments_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-class AppointmentHoursScreen extends StatelessWidget {
+class AppointmentHoursScreen extends StatelessWidget with DoctorAppointmentsHelper {
   final Date date;
-  const AppointmentHoursScreen({
+   AppointmentHoursScreen({
     required this.date,
     Key? key}) : super(key: key);
 
@@ -47,7 +48,7 @@ class AppointmentHoursScreen extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return GestureDetector(
                         onTap: (){
-
+                          onHourItemClick(date,date.times![index]);
                         },
                         child: Card(
                           color: AppColors.BASE_COLOR,

@@ -31,7 +31,9 @@ class _DoctorProfileState extends State<DoctorProfile> with ProfileHelper {
       backgroundColor: AppColors.LIGHT_GREY,
       body:
       Column(children: [
-        CustomActionBar(title:tr("profile"),),
+        CustomActionBar(
+          showBack: false,
+          title:tr("profile"),),
 
         Consumer<ProfileProvider>(builder: (context,data,_){
           DoctorModel? doctorModel=data.doctorModel;

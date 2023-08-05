@@ -27,4 +27,55 @@ class AppointmentRepo{
     }
   }
 
+  Future<BaseResponsesModel> doctorAddBooking({
+    required String name,
+    required String email,
+    required String phonenumber,
+    required String booking_date
+}) async {
+    try {
+      Response response = await NetworkRequest().sendAppRequest(
+          networkParameters: NetworkRequestModel(
+            apiCode: ApiCodes.DOC_BOOKING_API,
+            networkType: NetworkRequestEnum.post,
+            data: {
+              "name" : name,
+              "email" : email,
+              "phonenumber" : phonenumber,
+              "booking_date" : booking_date
+            },
+            showProgress: true,
+            dismissProgess: true,
+          ),
+          exceptionParameters: const NetworkExceptionModel(
+              dismissProgress: true,
+              showError: true
+          )
+      );
+      return BaseResponsesModel.fromJson(response.data);
+    } catch (error) {
+      return BaseResponsesModel(status: 500, success: false, data: null, message: 'failed to connect');
+    }
+  }
+  Future<BaseResponsesModel> getDoctorAllReservations() async {
+    try {
+      Response response = await NetworkRequest().sendAppRequest(
+          networkParameters: NetworkRequestModel(
+            apiCode: ApiCodes.GET_ALL_DOC_RESERVATIONS_API,
+            networkType: NetworkRequestEnum.get,
+            showProgress: true,
+            dismissProgess: true,
+          ),
+          exceptionParameters: const NetworkExceptionModel(
+              dismissProgress: true,
+              showError: true
+          )
+      );
+      return BaseResponsesModel.fromJson(response.data);
+    } catch (error) {
+      return BaseResponsesModel(status: 500, success: false, data: null, message: 'failed to connect');
+    }
+  }
+
+
 }

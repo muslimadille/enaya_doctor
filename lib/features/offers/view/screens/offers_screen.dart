@@ -20,7 +20,9 @@ class _OffersScreenState extends State<OffersScreen>with OffersHelper {
       backgroundColor: AppColors.LIGHT_GREY,
       body:
       Column(children: [
-        CustomActionBar(title:tr("more"),),
+        CustomActionBar(
+          showBack: false,
+          title:tr("more"),),
         Expanded(child:
         FutureBuilder(
           future: getDoctorOffers(),

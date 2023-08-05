@@ -1,3 +1,4 @@
+import 'package:enaya_doctor/common/providers/appointments_provider.dart';
 import 'package:enaya_doctor/common/providers/country_provider.dart';
 import 'package:enaya_doctor/common/providers/local_provider.dart';
 import 'package:enaya_doctor/common/providers/manage_dates_provider.dart';
@@ -22,6 +23,10 @@ List<SingleChildWidget> providersList=[
   ChangeNotifierProvider<ManageDatesProvider>(
       lazy:false,
       create: (context) => ManageDatesProvider()),
+
+  ChangeNotifierProvider<AppointmentsProvider>(
+      lazy:false,
+      create: (context) => AppointmentsProvider()),
 
 
 ];

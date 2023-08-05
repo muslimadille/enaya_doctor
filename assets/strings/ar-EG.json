@@ -67,11 +67,9 @@
   "doctor_appointments_screen_title": "قائمة المواعيد",
   "no_appoinments": "لا يوجد مواعيد",
   "doctor_appointment_times_screen_title": "مواعيد الحجز",
-  "doctor_appointments_hours_screen_title": "ساعات الحجز"
-
-
-
-
-
+  "doctor_appointments_hours_screen_title": "ساعات الحجز",
+  "book": "حجز",
+  "canceled": "لم يحضر",
+  "arrived": "حضر"
 
 }

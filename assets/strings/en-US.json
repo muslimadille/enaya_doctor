@@ -67,7 +67,10 @@
   "doctor_appointments_screen_title": "appointments list",
   "no_appoinments": "there is no appointments found ",
   "doctor_appointment_times_screen_title": "appointment times",
-  "doctor_appointments_hours_screen_title": "appointment hours"
+  "doctor_appointments_hours_screen_title": "appointment hours",
+  "book": "book",
+  "canceled": "canceled",
+  "arrived": "arrived"
 
 
 

@@ -27,7 +27,9 @@ class _DoctorScheduleSummeryScreenState extends State<DoctorScheduleSummeryScree
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CustomActionBar(title:tr("Schedule_summary"),),
+        CustomActionBar(
+          showBack: false,
+          title:tr("Schedule_summary"),),
           Row(children:[
             Expanded(
               child: SchedualTabWidget(title:tr("Schedule"), onClick: (){

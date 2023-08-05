@@ -28,7 +28,9 @@ class _DoctorScheduleScreenState extends State<DoctorScheduleScreen> with Appoin
         return Padding(
           padding:  EdgeInsets.all(2.w),
           child: InkWell(
-            onTap: onDateClick,
+            onTap: (){
+              onDateClick(datesList[index].date);
+            },
             child: ProfileCardWidget(
               showTitle: false,
               child: Row(children: [

@@ -21,5 +21,7 @@ class ApiCodes {
   static const String ABOUT_US_API = "admin/aboutUs";
   static const String DOC_REGISTER_API = "doctor/register";
   static const String DOCTORS_DATES_API = "dates";
+  static const String  DOC_BOOKING_API = "doctor/dashboard/reservations/add";
+  static const String GET_ALL_DOC_RESERVATIONS_API = "doctor/dashboard/reservations";
 
 }

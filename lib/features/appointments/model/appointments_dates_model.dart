@@ -33,6 +33,7 @@ class Date {
   final String? startTime;
   final String? endTime;
   final List<Time>? times;
+  Time?selectedTime;
 
   Date({
     required this.id,
@@ -43,6 +44,7 @@ class Date {
     this.startTime,
     this.endTime,
     this.times,
+    this.selectedTime
   });
 
   factory Date.fromJson(Map<String, dynamic> json) => Date(

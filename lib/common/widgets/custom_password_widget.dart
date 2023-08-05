@@ -37,7 +37,7 @@ class _CustomPasswordWidgetState extends State<CustomPasswordWidget> {
   @override
   Widget build(BuildContext context) {
     return  Padding(
-      padding:  EdgeInsets.symmetric(vertical: 1.h,horizontal: 10.w),
+      padding:  EdgeInsets.symmetric(vertical: 1.h,horizontal: 2.w),
       child: TextFormField(
         textAlignVertical: TextAlignVertical.top,
         controller: passwordController,

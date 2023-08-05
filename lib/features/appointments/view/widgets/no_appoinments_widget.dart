@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:enaya_doctor/common/utils/constants/app_colors.dart';
 import 'package:enaya_doctor/common/utils/constants/app_font_size.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +14,7 @@ class NoAppoinmenntsWidget extends StatelessWidget {
       children: [
       Icon(Icons.calendar_month_outlined,color: AppColors.GREY,size: 12.w,),
       SizedBox(height: 2.h,),
-      Text("no_appoinments",textAlign: TextAlign.center,style: TextStyle(color: AppColors.GREY,fontWeight: FontWeight.w800,fontSize: AppFontSize.medium),)
+      Text(tr("no_appoinments"),textAlign: TextAlign.center,style: TextStyle(color: AppColors.GREY,fontWeight: FontWeight.w800,fontSize: AppFontSize.medium),)
     ],);
   }
 }

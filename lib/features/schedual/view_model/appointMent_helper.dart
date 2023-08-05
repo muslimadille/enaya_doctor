@@ -42,8 +42,8 @@ mixin AppointmentHelper{
     final DateFormat formatter = DateFormat('EEEE d MMMM',Localizations.localeOf(AppNavigator().currentContext()).languageCode);
     return formatter.format(date);
   }
-  onDateClick(){
-    AppNavigator().push(routeName: AppRoutes.DOCTOR_APPOINTMENTS_SCREEN_ROUTE);
+  onDateClick(DateTime date){
+    AppNavigator().push(routeName: AppRoutes.DOCTOR_APPOINTMENTS_SCREEN_ROUTE,arguments: date);
   }
 
 

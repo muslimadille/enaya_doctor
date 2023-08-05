@@ -14,7 +14,9 @@ class MoreScreen extends StatelessWidget with MoreScreenHelper {
       backgroundColor: AppColors.LIGHT_GREY,
       body:
     Column(children: [
-      CustomActionBar(title:tr("more"),),
+      CustomActionBar(
+        showBack: false,
+        title:tr("more"),),
       Expanded(child:
       ListView(children:  [
         MoreItemWidget(title: 'change_language', icon: Icons.language,

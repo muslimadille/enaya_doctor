@@ -62,6 +62,12 @@
   "female":"female",
   "full_name_ar": "full name (arabic)",
   "full_name_en": "full name (english)",
+  "confirm": "confirm",
+  "cancel": "cancel",
+  "doctor_appointments_screen_title": "appointments list",
+  "no_appoinments": "there is no appointments found ",
+  "doctor_appointment_times_screen_title": "appointment times",
+  "doctor_appointments_hours_screen_title": "appointment hours"
 
 
 

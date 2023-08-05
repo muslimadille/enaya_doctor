@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:enaya_doctor/common/helper/app_navigator.dart';
+import 'package:enaya_doctor/common/utils/constants/app_routes.dart';
 import 'package:enaya_doctor/features/schedual/model/doctor_schedule_model.dart';
 import 'package:enaya_doctor/features/schedual/view/screens/doctor_manage_dates_screen.dart';
 import 'package:enaya_doctor/features/schedual/view/screens/doctor_shedule_screen.dart';
@@ -40,6 +41,9 @@ mixin AppointmentHelper{
   String dayName(DateTime date){
     final DateFormat formatter = DateFormat('EEEE d MMMM',Localizations.localeOf(AppNavigator().currentContext()).languageCode);
     return formatter.format(date);
+  }
+  onDateClick(){
+    AppNavigator().push(routeName: AppRoutes.DOCTOR_APPOINTMENTS_SCREEN_ROUTE);
   }
 
 

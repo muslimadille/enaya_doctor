@@ -61,6 +61,17 @@
   "female":"انثى",
   "full_name_ar": "الاسم واللقب (عربي)",
   "full_name_en": "الاسم واللقب (english)",
-  "register": ""
+  "register": "تسجيل",
+  "confirm": "تاكيد",
+  "cancel": "الغاء",
+  "doctor_appointments_screen_title": "قائمة المواعيد",
+  "no_appoinments": "لا يوجد مواعيد",
+  "doctor_appointment_times_screen_title": "مواعيد الحجز",
+  "doctor_appointments_hours_screen_title": "ساعات الحجز"
+
+
+
+
+
 
 }

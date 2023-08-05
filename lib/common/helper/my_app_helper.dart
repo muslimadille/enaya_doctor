@@ -1,6 +1,10 @@
 import 'package:enaya_doctor/common/helper/app_navigator.dart';
 import 'package:enaya_doctor/common/helper/check_internet.dart';
 import 'package:enaya_doctor/common/utils/constants/app_routes.dart';
+import 'package:enaya_doctor/features/appointments/model/appointments_dates_model.dart';
+import 'package:enaya_doctor/features/appointments/view/screens/appoointment_hours_screen.dart';
+import 'package:enaya_doctor/features/appointments/view/screens/doctor_appoinments_screen.dart';
+import 'package:enaya_doctor/features/appointments/view/screens/doctor_appointment_times_screen.dart';
 import 'package:enaya_doctor/features/auth/view/screens/login_screen.dart';
 import 'package:enaya_doctor/features/auth/view/screens/register_screen.dart';
 import 'package:enaya_doctor/features/home_screen/view/home_screen.dart';
@@ -136,11 +140,14 @@ mixin class MyAppHelper{
         case AppRoutes.REGISTER_SCREEN_ROUTE:
         return MaterialPageRoute(builder: (_) =>  const RegisterScreen());
 
+      case AppRoutes.DOCTOR_APPOINTMENTS_SCREEN_ROUTE:
+        return MaterialPageRoute(builder: (_) =>   DoctorAppointmentsScreen());
 
+      case AppRoutes.DOCTOR_APPOINTMENT_TIMES_SCREEN_ROUTE:
+        return MaterialPageRoute(builder: (_) =>   DoctorAppointmentTimesScreen());
 
-
-
-
+      case AppRoutes.DOCTOR_APPOINTMENTS_HOURS_SCREEN_ROUTE:
+        return MaterialPageRoute(builder: (_) =>   AppointmentHoursScreen(date:routeSettings.arguments as Date ,));
 
       default:
         return MaterialPageRoute(builder: (_) =>  const SplashScreen());

@@ -20,5 +20,6 @@ class ApiCodes {
   static const String DELETE_VACATION_API = "doctor/dashboard/vacation/delete";
   static const String ABOUT_US_API = "admin/aboutUs";
   static const String DOC_REGISTER_API = "doctor/register";
+  static const String DOCTORS_DATES_API = "dates";
 
 }
